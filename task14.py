@@ -1,4 +1,4 @@
-import rje
+import re
 from itertools import product
 from collections import defaultdict
 
