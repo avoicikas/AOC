@@ -24,15 +24,27 @@ def open_file_df(file):
     return df
 
 def solve(data):
-    return data
+    return 1
+
+def part1(file):
+    data = open_file(file)
+    result = solve(data)
+    return result
+
+def part2(file):
+    data = open_file(file)
+    result = solve(data)
+    return result
+
 
 @ click.command()
 @ click.option('--file', type=str, help='input filename', default='input')
-def pipeline(file:str):
-    data = open_file(file)
-    result = solve(data)
+def main(file:str):
+    result = part1(file)
+    print(result)
+    result = part2(file)
     print(result)
 
 
 if __name__ == "__main__":
-    pipeline()
+    main()
